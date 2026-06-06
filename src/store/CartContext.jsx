@@ -5,3 +5,9 @@ const CartContext = createContext({
   addItem: (item) => {},
   removeItem: (id) => {},
 });
+
+export function CartContextProvider({ children }) {
+  return <CartContext>{children}</CartContext>;
+}
+
+export default CartContext;
